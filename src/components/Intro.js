@@ -8,7 +8,7 @@ const Intro = () => (
     <h2>Olapetan Olawale</h2>
     <p>
       I am a
-      <span> Full stack developer</span>
+      <span> Full stack developer </span>
       with experience knowledge in JavaScript, React, Redux, Ruby, Ruby on Rails,
       PostgreSQL. In love with pair-programming, remote work and improving open-source projects.
       {' '}
