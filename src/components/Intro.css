@@ -1,0 +1,45 @@
+.intro {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.intro h4 {
+  font-weight: 400;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.intro h2 {
+  color: #ea7911;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 2.421rem;
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+
+.intro p {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.intro a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px;
+  background-color: #ea7911;
+  border-radius: 23.58px;
+  width: 184px;
+  margin: 44px auto 67.3px;
+  display: block;
+  font-weight: 600;
+  font-size: 1.179rem;
+  line-height: 22.84px;
+}
+
+.intro span {
+  color: #ea7911;
+}
