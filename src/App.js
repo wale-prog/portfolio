@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
 
-      <div className='container'>
+      <div className="container">
         <Header onSetMobileMenu={mobileMenuStatus} />
         <MobileMenu menu={mobileMenu} />
       </div>
