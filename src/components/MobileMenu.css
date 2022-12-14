@@ -1,0 +1,34 @@
+.menu {
+  background-color: rgb(15, 13, 13);
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  right: -100%;
+  transition: 0.3s;
+}
+
+.menu.active {
+  right: 0;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  list-style: none;
+  margin: 48px auto;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.menu-list a:hover {
+  opacity: 1;
+}
