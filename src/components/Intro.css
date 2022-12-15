@@ -1,6 +1,7 @@
 .intro {
   text-align: center;
   margin-top: 60px;
+  padding-bottom: 3.313rem;
 }
 
 .intro h4 {
@@ -42,4 +43,30 @@
 
 .intro span {
   color: #ea7911;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    text-align: justify;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 83%;
+    margin: 60px auto;
+    gap: 5.125rem;
+  }
+
+  .intro a {
+    text-align: center;
+    display: inline-block;
+  }
+
+  .intro p {
+    width: auto;
+    margin: 0 2rem 0 0;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }

@@ -31,3 +31,26 @@
 .hamburger.active div:nth-child(3) {
   transform: translate(0, -10px) rotate(-45deg);
 }
+
+.scroll-lock {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .hamburger div {
+    visibility: hidden;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #888a94;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header img {
+    margin-left: 24px;
+  }
+}
