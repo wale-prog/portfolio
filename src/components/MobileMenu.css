@@ -5,6 +5,7 @@
   width: 100vw;
   height: 100vh;
   right: -100%;
+  top: 72px;
   transition: 0.3s;
 }
 
@@ -24,8 +25,6 @@
 .menu-list a {
   text-decoration: none;
   color: #fff;
-
-  /* opacity: 0.5; */
   font-size: 1.125rem;
   font-weight: 700;
   text-align: center;
@@ -33,4 +32,34 @@
 
 .menu-list a:hover {
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    background-color: transparent;
+    text-align: center;
+    position: static;
+    width: auto;
+    height: auto;
+    top: 0;
+    right: 0;
+    transition: none;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    list-style: none;
+    margin: 24px 0 24px 0;
+  }
+
+  .menu-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0.5;
+  }
 }
