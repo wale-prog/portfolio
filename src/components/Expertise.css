@@ -1,0 +1,60 @@
+.expertise {
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+  padding: 0 1.063rem;
+}
+
+.expertise p {
+  padding: 10px;
+  text-align: center;
+  color: #ea7911;
+  font-weight: 400;
+  padding-top: 1.438rem;
+}
+
+.expertise h5 {
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  margin: 32px 0;
+}
+
+.chart-outer {
+  width: 100%;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.chart-bar-inner {
+  height: 100%;
+  width: 100%;
+  border: 0.5px solid #ea7911;
+  border-radius: 10px;
+  background-color: #fff;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  
+ }
+
+.chart-fill {
+  background-color: #ea7911;
+  height: 100%;
+  transition: all 0.3s ease-out;
+  border-radius: 10px;
+}
+
+.chart-score,
+.chart-label {
+ font-weight: 500;
+ font-size: 14px;
+ 
+}
+
+.chart-title {
+  display: flex;
+  justify-content: space-between;
+}

@@ -5,6 +5,11 @@
   padding-top: 12px;
 }
 
+.main-header {
+  position: sticky;
+  top: 0;
+}
+
 .hamburger {
   display: flex;
   flex-direction: column;

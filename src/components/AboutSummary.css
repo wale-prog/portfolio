@@ -2,3 +2,11 @@
   border-top: 1px solid #888a94;
   padding-top: 5.5rem;
 }
+
+.about-summary-main p {
+  line-height: 50px;
+}
+
+.about-summary-main h2 {
+  text-align: center;
+}

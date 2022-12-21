@@ -1,15 +1,18 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Intro from './components/Intro';
-import AboutSummary from './components/AboutSummary';
+import Hompegage from './components/Homepage';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <Header />
-        <Intro />
-        <AboutSummary />
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route exact path="/" element={<Hompegage />} />
+          </Routes>
+        </BrowserRouter>
       </div>
     </div>
   );
