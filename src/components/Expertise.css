@@ -11,6 +11,7 @@
   color: #ea7911;
   font-weight: 400;
   padding-top: 1.438rem;
+  margin-top: 0;
 }
 
 .expertise h5 {
@@ -26,6 +27,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
+  gap: 10px;
 }
 
 .chart-bar-inner {
@@ -34,24 +36,23 @@
   border: 0.5px solid #ea7911;
   border-radius: 10px;
   background-color: #fff;
+
   /* overflow: hidden; */
   display: flex;
   flex-direction: column;
-  
- }
+}
 
 .chart-fill {
   background-color: #ea7911;
-  height: 100%;
+  height: 15px;
   transition: all 0.3s ease-out;
   border-radius: 10px;
 }
 
 .chart-score,
 .chart-label {
- font-weight: 500;
- font-size: 14px;
- 
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .chart-title {

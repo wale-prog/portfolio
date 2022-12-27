@@ -5,13 +5,13 @@
   width: 100vw;
   height: 100vh;
   right: -100%;
-  top: 72px;
+  top: 69px;
   transition: 0.3s;
 }
 
 .menu.active {
   right: 0;
-  opacity: 0.95;
+  opacity: 0.9;
 }
 
 .menu-list {

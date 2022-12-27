@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hompegage from './components/Homepage';
+import About from './components/About';
 import './App.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
           <Header />
           <Routes>
             <Route exact path="/" element={<Hompegage />} />
+            <Route exact path="about" element={<About />} />
           </Routes>
         </BrowserRouter>
       </div>

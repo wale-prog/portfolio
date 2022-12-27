@@ -16,9 +16,9 @@ const MobileMenu = (props) => {
     >
       <ul className="menu-list">
         <li><NavLink to="/">HOME</NavLink></li>
-        <li><NavLink to="about">ABOUT</NavLink></li>
-        <li><NavLink to="projects">PROJECTS</NavLink></li>
-        <li><NavLink to="contact">CONTACT ME</NavLink></li>
+        <li><NavLink to="/about">ABOUT</NavLink></li>
+        <li><NavLink to="/projects">PROJECTS</NavLink></li>
+        <li><NavLink to="/contact">CONTACT ME</NavLink></li>
       </ul>
     </div>
   );

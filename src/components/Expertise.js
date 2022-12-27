@@ -10,6 +10,7 @@ const Expertise = () => {
     { id: 5, name: 'Ruby', score: '60%' },
     { id: 6, name: 'Ruby on Rails', score: '70%' },
     { id: 7, name: 'PostgreSQL', score: '70%' },
+    { id: 8, name: 'RSpec', score: '90%' },
   ];
 
   return (
