@@ -7,9 +7,9 @@ const Expertise = () => {
     { id: 2, name: 'React', score: '90%' },
     { id: 3, name: 'Redux', score: '80%' },
     { id: 4, name: 'JavaScript', score: '80%' },
-    { id: 5, name: 'Ruby', score: '60%' },
+    { id: 5, name: 'Ruby', score: '80%' },
     { id: 6, name: 'Ruby on Rails', score: '70%' },
-    { id: 7, name: 'PostgreSQL', score: '70%' },
+    { id: 7, name: 'PostgreSQL', score: '80%' },
     { id: 8, name: 'RSpec', score: '90%' },
   ];
 

@@ -1,0 +1,88 @@
+.qualification-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.qualification-main h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.educa {
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0 20px;
+  line-height: 50px;
+}
+
+.qualification {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.qualification img {
+  height: 120px;
+  width: 15px;
+}
+
+.underline {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  /* width: 121px; */
+}
+
+.underline1 {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  width: 127px;
+}
+.qualification h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.qualification h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.qualification p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ea7911
+}
+
+.experience {
+  margin-top: 40px;
+}
+
+.bullet {
+  height: 4px;
+  width: 8px;
+  border: #ea7911 solid 2px;
+  transform: rotate(45deg);
+  position: relative;
+  top: 18px;
+}
+
+.bullet-point {
+  display: flex;
+  gap: 8px;  
+  justify-content: center;
+  margin-left: 24px;
+}
+
+.line {
+  opacity: 0.5;
+  margin: 36px 0
+}
