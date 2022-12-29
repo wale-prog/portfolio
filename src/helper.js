@@ -1,4 +1,5 @@
 import edu from './images/mobile/edu.png';
+import skillImg from './images/mobile/skill_img.png';
 
 export const eduData = () => (
   [
@@ -62,6 +63,27 @@ export const experienceData = () => (
         'Attended to customers’ complaints and made sure they leave our office or phone call happy.',
       ],
       edu,
+    },
+  ]
+);
+
+export const skills = () => (
+  [
+    {
+      id: 1,
+      title: 'Frontend',
+      skills: {
+        image: skillImg,
+        skills: ['React/Redux', 'JavaScript'],
+      },
+    },
+    {
+      id: 2,
+      title: 'Backend',
+      skills: {
+        image: skillImg,
+        skills: ['Ruby', 'Ruby on Rails', 'PostgreSQL', 'NodeJS'],
+      },
     },
   ]
 );

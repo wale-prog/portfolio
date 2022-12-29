@@ -24,8 +24,7 @@ const Qualifications = () => (
     </div>
     <div className="experience">
       <h3 className="educa">Experience</h3>
-      {/* <div className="underline1" />
-      <div className="underline1" /> */}
+      <div className="underline" />
       {experienceData().map((experience) => (
         <div key={experience.id}>
           <div className="qualification">

@@ -68,18 +68,22 @@
 
 .bullet {
   height: 4px;
-  width: 8px;
   border: #ea7911 solid 2px;
   transform: rotate(45deg);
   position: relative;
   top: 18px;
+  flex-basis: px;
 }
 
 .bullet-point {
   display: flex;
   gap: 8px;  
-  justify-content: center;
+  justify-content: space-between;
   margin-left: 24px;
+}
+
+.bullet-point p {
+  flex-basis: 100%;
 }
 
 .line {

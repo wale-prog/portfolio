@@ -1,4 +1,4 @@
-.container {
+.container-app {
   margin: auto 1.313rem;
 }
 
@@ -8,7 +8,7 @@
 }
 
 @media (min-width: 768px) {
-  .container {
+  .container-app {
     margin: auto;
   }
 }
