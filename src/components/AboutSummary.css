@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-.see-more a{
+.see-more a {
   text-decoration: none;
   color: #ea7911;
 }
@@ -22,7 +22,7 @@
 }
 
 .contact-info span {
-  margin-left: 2.5rem; 
+  margin-left: 2.5rem;
 }
 
 .contact-info a {
@@ -45,14 +45,14 @@
 
   .about-summary-main {
     display: flex;
-    flex: 1 1 0px;
-    margin: 0 110px 0 110px ;
+    flex: 1 1 0;
+    margin: 0 110px 0 110px;
+
     /* width: 50%; */
   }
 
   /* .top-bracket {
     position: relative;
-    
+
   } */
- 
 }

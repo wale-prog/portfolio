@@ -71,18 +71,26 @@ export const skills = () => (
   [
     {
       id: 1,
-      title: 'Frontend',
+      title: 'Languages',
       skills: {
         image: skillImg,
-        skills: ['React/Redux', 'JavaScript'],
+        skills: ['JavaScript', 'Ruby', 'Python', 'HTML', 'CSS'],
       },
     },
     {
       id: 2,
-      title: 'Backend',
+      title: 'Frameworks',
       skills: {
         image: skillImg,
-        skills: ['Ruby', 'Ruby on Rails', 'PostgreSQL', 'NodeJS'],
+        skills: ['Ruby on Rails', 'React', 'Bootstrap', 'Tailwind'],
+      },
+    },
+    {
+      id: 3,
+      title: 'Testing',
+      skills: {
+        image: skillImg,
+        skills: ['Jest', 'React Testing Library', 'RSpec', 'Mocha', 'Chai'],
       },
     },
   ]

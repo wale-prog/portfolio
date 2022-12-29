@@ -21,11 +21,18 @@
   line-height: 50px;
 }
 
+.qualifi {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .qualification {
   display: flex;
   align-items: center;
   flex-direction: row;
   gap: 12px;
+  margin-bottom: 32px;
 }
 
 .qualification img {
@@ -35,8 +42,9 @@
 
 .underline {
   border-bottom: 1px solid #fff;
-  margin-bottom: 5px;
+  margin-bottom: 42px;
   margin-left: 20px;
+
   /* width: 121px; */
 }
 
@@ -46,6 +54,7 @@
   margin-left: 20px;
   width: 127px;
 }
+
 .qualification h5 {
   font-size: 18px;
   font-weight: 500;
@@ -59,7 +68,7 @@
 .qualification p {
   font-weight: 400;
   font-size: 14px;
-  color: #ea7911
+  color: #ea7911;
 }
 
 .experience {
@@ -67,17 +76,19 @@
 }
 
 .bullet {
-  height: 4px;
-  border: #ea7911 solid 2px;
+  height: 8px;
+
+  /* border: #ea7911 solid 2px; */
+  background-color: #ea7911;
   transform: rotate(45deg);
   position: relative;
   top: 18px;
-  flex-basis: px;
+  flex-basis: 8px;
 }
 
 .bullet-point {
   display: flex;
-  gap: 8px;  
+  gap: 8px;
   justify-content: space-between;
   margin-left: 24px;
 }
@@ -88,5 +99,5 @@
 
 .line {
   opacity: 0.5;
-  margin: 36px 0
+  margin: 36px 0;
 }
