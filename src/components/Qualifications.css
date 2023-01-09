@@ -88,7 +88,6 @@
 
 .bullet-point {
   display: flex;
-  gap: 8px;
   justify-content: space-between;
   margin-left: 24px;
 }
