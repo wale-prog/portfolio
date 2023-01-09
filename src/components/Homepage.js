@@ -3,6 +3,7 @@ import AboutSummary from './AboutSummary';
 import Expertise from './Expertise';
 import Qualifications from './Qualifications';
 import Skills from './Skills';
+import Projects from './Projects';
 
 const Hompegage = () => (
   <>
@@ -11,6 +12,7 @@ const Hompegage = () => (
     <Expertise />
     <Qualifications />
     <Skills />
+    <Projects />
   </>
 );
 
