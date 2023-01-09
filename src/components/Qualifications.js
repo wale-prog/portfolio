@@ -14,7 +14,7 @@ const Qualifications = () => (
       {eduData().map((edu) => (
         <div className="qualification" key={edu.id}>
           <img src={edu.edu} alt="" />
-          <div>
+          <div className="qualifi">
             <h5>{edu.school}</h5>
             <h4>{edu.course}</h4>
             <p>{edu.duration}</p>
@@ -24,8 +24,7 @@ const Qualifications = () => (
     </div>
     <div className="experience">
       <h3 className="educa">Experience</h3>
-      {/* <div className="underline1" />
-      <div className="underline1" /> */}
+      <div className="underline" />
       {experienceData().map((experience) => (
         <div key={experience.id}>
           <div className="qualification">

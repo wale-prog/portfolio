@@ -21,11 +21,18 @@
   line-height: 50px;
 }
 
+.qualifi {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .qualification {
   display: flex;
   align-items: center;
   flex-direction: row;
   gap: 12px;
+  margin-bottom: 32px;
 }
 
 .qualification img {
@@ -35,7 +42,7 @@
 
 .underline {
   border-bottom: 1px solid #fff;
-  margin-bottom: 5px;
+  margin-bottom: 42px;
   margin-left: 20px;
 
   /* width: 121px; */
@@ -69,19 +76,24 @@
 }
 
 .bullet {
-  height: 4px;
-  width: 8px;
-  border: #ea7911 solid 2px;
+  height: 8px;
+
+  /* border: #ea7911 solid 2px; */
+  background-color: #ea7911;
   transform: rotate(45deg);
   position: relative;
   top: 18px;
+  flex-basis: 8px;
 }
 
 .bullet-point {
   display: flex;
-  gap: 8px;
-  justify-content: center;
+  justify-content: space-between;
   margin-left: 24px;
+}
+
+.bullet-point p {
+  flex-basis: 100%;
 }
 
 .line {

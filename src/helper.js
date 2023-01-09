@@ -1,4 +1,5 @@
 import edu from './images/mobile/edu.png';
+import skillImg from './images/mobile/skill_img.png';
 
 export const eduData = () => (
   [
@@ -62,6 +63,35 @@ export const experienceData = () => (
         'Attended to customers’ complaints and made sure they leave our office or phone call happy.',
       ],
       edu,
+    },
+  ]
+);
+
+export const skills = () => (
+  [
+    {
+      id: 1,
+      title: 'Languages',
+      skills: {
+        image: skillImg,
+        skills: ['JavaScript', 'Ruby', 'Python', 'HTML', 'CSS'],
+      },
+    },
+    {
+      id: 2,
+      title: 'Frameworks',
+      skills: {
+        image: skillImg,
+        skills: ['Ruby on Rails', 'React', 'Bootstrap', 'Tailwind'],
+      },
+    },
+    {
+      id: 3,
+      title: 'Testing',
+      skills: {
+        image: skillImg,
+        skills: ['Jest', 'React Testing Library', 'RSpec', 'Mocha', 'Chai'],
+      },
     },
   ]
 );
