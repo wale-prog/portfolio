@@ -6,16 +6,23 @@ import './Header.css';
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const header = useRef();
-  const showMenu = () => {
+  const menuOptions = (menu) => {
     header.current.classList.toggle('active');
-    setMobileMenu(!mobileMenu);
+    setMobileMenu(menu);
     document.body.classList.toggle('scroll-lock');
   };
+  const showMenu = () => {
+    menuOptions(!mobileMenu);
+  };
+  const closeMenu = (menu) => {
+    menuOptions(menu);
+  };
+
   return (
-    <div>
+    <div className="main-header">
       <nav className="header">
         <img src={logo} alt="page logo" />
-        <MobileMenu menu={mobileMenu} />
+        <MobileMenu menu={mobileMenu} onCloseMenu={closeMenu} />
         <div ref={header} className="hamburger" role="presentation" onClick={showMenu} onKeyDown={showMenu}>
           <div />
           <div />

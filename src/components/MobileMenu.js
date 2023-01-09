@@ -1,16 +1,24 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 import './MobileMenu.css';
 
 const MobileMenu = (props) => {
-  const { menu } = props;
+  const { menu, onCloseMenu } = props;
+  const closeMenu = () => {
+    onCloseMenu(false);
+  };
   return (
-    <div className={`${menu ? 'menu active' : 'menu'}`}>
+    <div
+      className={`${menu ? 'menu active' : 'menu'}`}
+      role="presentation"
+      onClick={closeMenu}
+    >
       <ul className="menu-list">
-        <li><a href="/">HOME</a></li>
-        <li><a href="/">ABOUT</a></li>
-        <li><a href="/">PROJECTS</a></li>
-        <li><a href="/">CONTACT ME</a></li>
+        <li><NavLink to="/">HOME</NavLink></li>
+        <li><NavLink to="/about">ABOUT</NavLink></li>
+        <li><NavLink to="/projects">PROJECTS</NavLink></li>
+        <li><NavLink to="/contact">CONTACT ME</NavLink></li>
       </ul>
     </div>
   );
@@ -18,6 +26,7 @@ const MobileMenu = (props) => {
 
 MobileMenu.propTypes = {
   menu: PropTypes.bool.isRequired,
+  onCloseMenu: PropTypes.func.isRequired,
 };
 
 export default MobileMenu;

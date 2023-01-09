@@ -1,0 +1,58 @@
+.about-summary-main {
+  border-top: 1px solid #888a94;
+  padding: 5.5rem 0;
+}
+
+.about-summary-main p {
+  line-height: 50px;
+  margin: 0 2.5rem;
+}
+
+.about-summary-main h2 {
+  text-align: center;
+}
+
+.see-more a {
+  text-decoration: none;
+  color: #ea7911;
+}
+
+.contact-info {
+  margin-left: 3.438rem;
+}
+
+.contact-info span {
+  margin-left: 2.5rem;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hidden-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hidden-desktop {
+    display: inline;
+  }
+
+  .about-summary-main p {
+    margin: 0 2.5rem;
+  }
+
+  .about-summary-main {
+    display: flex;
+    flex: 1 1 0;
+    margin: 0 110px 0 110px;
+
+    /* width: 50%; */
+  }
+
+  /* .top-bracket {
+    position: relative;
+
+  } */
+}
