@@ -1,11 +1,10 @@
-/* eslint-disable */
+/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import { skills } from '../helper';
 import skillLogo from '../images/mobile/skill_logo.png';
 
 const SkillsCard = () => {
   const technicalSkills = skills();
-  console.log(technicalSkills[0].skills.skills)
   return (
     <>
       <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
@@ -16,11 +15,11 @@ const SkillsCard = () => {
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="skill-logo" src={skillLogo} alt=""/>
+            <img className="skill-logo" src={skillLogo} alt="" />
             <div className="skills">
               <h3>{technicalSkills[0].title}</h3>
-              {technicalSkills[0].skills.skills.map((skill) => (
-                <div>
+              {technicalSkills[0].skills.skills.map((skill, ind) => (
+                <div key={ind}>
                   <img src={technicalSkills[0].skills.image} alt="" />
                   <p>{skill}</p>
                 </div>
@@ -28,11 +27,11 @@ const SkillsCard = () => {
             </div>
           </div>
           <div className="carousel-item">
-          <img className="skill-logo" src={skillLogo} alt=""/>
+            <img className="skill-logo" src={skillLogo} alt="" />
             <div className="skills">
               <h3>{technicalSkills[1].title}</h3>
-              {technicalSkills[1].skills.skills.map((skill) => (
-                <div>
+              {technicalSkills[1].skills.skills.map((skill, ind) => (
+                <div key={ind}>
                   <img src={technicalSkills[1].skills.image} alt="" />
                   <p>{skill}</p>
                 </div>
@@ -40,11 +39,11 @@ const SkillsCard = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img className="skill-logo" src={skillLogo} alt=""/>
+            <img className="skill-logo" src={skillLogo} alt="" />
             <div className="skills">
               <h3>{technicalSkills[2].title}</h3>
-              {technicalSkills[2].skills.skills.map((skill) => (
-                <div>
+              {technicalSkills[2].skills.skills.map((skill, ind) => (
+                <div key={ind}>
                   <img src={technicalSkills[2].skills.image} alt="" />
                   <p>{skill}</p>
                 </div>
@@ -62,7 +61,7 @@ const SkillsCard = () => {
         </a>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default SkillsCard;

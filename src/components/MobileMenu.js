@@ -8,6 +8,9 @@ const MobileMenu = (props) => {
   const closeMenu = () => {
     onCloseMenu(false);
   };
+
+  const activeStyle = { opacity: '1', color: '#fff' };
+
   return (
     <div
       className={`${menu ? 'menu active' : 'menu'}`}
@@ -15,10 +18,38 @@ const MobileMenu = (props) => {
       onClick={closeMenu}
     >
       <ul className="menu-list">
-        <li><NavLink to="/">HOME</NavLink></li>
-        <li><NavLink to="/about">ABOUT</NavLink></li>
-        <li><NavLink to="/projects">PROJECTS</NavLink></li>
-        <li><NavLink to="/contact">CONTACT ME</NavLink></li>
+        <li>
+          <NavLink
+            to="/"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
+            HOME
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/about"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
+            ABOUT
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/projects"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
+            PROJECTS
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/contact"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
+            CONTACT
+          </NavLink>
+        </li>
       </ul>
     </div>
   );

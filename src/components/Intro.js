@@ -14,7 +14,7 @@ const Intro = () => (
         PostgreSQL. In love with pair-programming, remote work and improving open-source projects.
         {' '}
       </p>
-      <a href="https://docs.google.com/document/d/1e67vVevpsMVB0pkch0Izb-RNLajMRhk9YZqmSqKgtJI/edit?usp=sharing" target="__blank">Resume</a>
+      <a href="https://docs.google.com/document/d/1zZE8Rw-txET6f1NsGIueKPI7k1vz_3-Y/edit?usp=sharing&ouid=107807986154209243588&rtpof=true&sd=true" target="__blank">Resume</a>
     </div>
     <img src={profilePhoto} alt="profile" />
   </div>
