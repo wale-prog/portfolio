@@ -45,14 +45,22 @@
 
   .about-summary-main {
     display: flex;
-    flex: 1 1 0;
-    margin: 0 110px 0 110px;
 
-    /* width: 50%; */
+    /* flex: 1 1 0; */
+    margin: 0 110px 0 110px;
   }
 
-  /* .top-bracket {
-    position: relative;
+  .about-content {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
 
-  } */
+  .pic-desktop {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  .picFrame {
+    width: 100%;
+  }
 }

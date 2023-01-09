@@ -1,14 +1,11 @@
 import React from 'react';
 import './AboutSummary.css';
 import { NavLink } from 'react-router-dom';
-import MyPicture from '../images/desktop/my_picture.png';
-import TopBracket from '../images/desktop/top_bracket.png';
-import RecBackground from '../images/desktop/rectangle_background.png';
-import BottomBracket from '../images/desktop/bottom_bracket.png';
+import picFrame from '../images/desktop/pic_frame.png';
 
 const AboutSummary = () => (
   <div className="about-summary-main" id="about">
-    <div>
+    <div className="about-content">
       <h2>About me</h2>
       <p>
         Hello, my name is Wale. I am a full-stack developer currently
@@ -42,11 +39,10 @@ const AboutSummary = () => (
         </p>
       </div>
     </div>
-    <div className="hidden-desktop">
-      <img className="top-bracket" src={TopBracket} alt="" />
-      <img className="rec-background" src={RecBackground} alt="" />
-      <img className="my-picture" src={MyPicture} alt="" />
-      <img className="bottom-bracket" src={BottomBracket} alt="" />
+    <div className="pic-desktop hidden-desktop">
+      <div>
+        <img className="picFrame" src={picFrame} alt="" />
+      </div>
     </div>
   </div>
 );

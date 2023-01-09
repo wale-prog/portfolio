@@ -17,17 +17,19 @@ const Expertise = () => {
     <div className="expertise">
       <p>Why Choose Me</p>
       <h5>My Expertise Area</h5>
-      {myExpertise.map((expertise) => (
-        <div className="chart-outer" key={expertise.id}>
-          <div className="chart-title">
-            <div className="chart-label">{expertise.name}</div>
-            <div className="chart-score">{expertise.score}</div>
+      <div className="expertise-item">
+        {myExpertise.map((expertise) => (
+          <div className="chart-outer" key={expertise.id}>
+            <div className="chart-title">
+              <div className="chart-label">{expertise.name}</div>
+              <div className="chart-score">{expertise.score}</div>
+            </div>
+            <div className="chart-bar-inner">
+              <div className="chart-fill" style={{ width: expertise.score }} />
+            </div>
           </div>
-          <div className="chart-bar-inner">
-            <div className="chart-fill" style={{ width: expertise.score }} />
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
