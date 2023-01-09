@@ -37,6 +37,7 @@
   border-bottom: 1px solid #fff;
   margin-bottom: 5px;
   margin-left: 20px;
+
   /* width: 121px; */
 }
 
@@ -46,6 +47,7 @@
   margin-left: 20px;
   width: 127px;
 }
+
 .qualification h5 {
   font-size: 18px;
   font-weight: 500;
@@ -59,7 +61,7 @@
 .qualification p {
   font-weight: 400;
   font-size: 14px;
-  color: #ea7911
+  color: #ea7911;
 }
 
 .experience {
@@ -77,12 +79,12 @@
 
 .bullet-point {
   display: flex;
-  gap: 8px;  
+  gap: 8px;
   justify-content: center;
   margin-left: 24px;
 }
 
 .line {
   opacity: 0.5;
-  margin: 36px 0
+  margin: 36px 0;
 }
