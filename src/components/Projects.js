@@ -1,10 +1,13 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 import './Projects.css';
 import { projects } from '../helper';
 
-const Projects = () => {
+const Projects = (props) => {
+  const { onProjectClick, openModal } = props;
   const displayModal = (e) => {
-    console.log(e.target.name);
+    onProjectClick(+e.target.name);
+    openModal(true);
   };
 
   return (
@@ -21,4 +24,10 @@ const Projects = () => {
     </div>
   );
 };
+
+Projects.propTypes = {
+  onProjectClick: PropTypes.func.isRequired,
+  openModal: PropTypes.func.isRequired,
+};
+
 export default Projects;

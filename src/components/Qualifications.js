@@ -35,12 +35,14 @@ const Qualifications = () => (
                 <p>{experience.duration}</p>
               </div>
             </div>
-            {experience.description.map((desc, ind) => (
-              <div className="bullet-point hidden-desktop" key={ind}>
-                <div className="bullet" />
-                <p>{desc}</p>
-              </div>
-            ))}
+            <div className="hidden-desktop">
+              {experience.description.map((desc, ind) => (
+                <div className="bullet-point" key={ind}>
+                  <div className="bullet" />
+                  <p>{desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
         ))}
       </div>

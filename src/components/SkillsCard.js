@@ -7,7 +7,7 @@ const SkillsCard = () => {
   const technicalSkills = skills();
   return (
     <>
-      <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+      <div id="carouselExampleIndicators" className="carousel slide hidden-desktop" data-ride="carousel">
         <ol className="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active" />
           <li data-target="#carouselExampleIndicators" data-slide-to="1" />
