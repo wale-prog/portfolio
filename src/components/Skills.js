@@ -1,5 +1,6 @@
 import React from 'react';
 import SkillsCard from './SkillsCard';
+// import SkillDesktop from './SkillsDesktop';
 import './Skills.css';
 
 const Skills = () => (

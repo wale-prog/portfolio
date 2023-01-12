@@ -9,7 +9,7 @@ const Header = () => {
   const menuOptions = (menu) => {
     header.current.classList.toggle('active');
     setMobileMenu(menu);
-    document.body.classList.toggle('scroll-lock');
+    document.body.classList.remove('scroll-lock');
   };
   const showMenu = () => {
     menuOptions(!mobileMenu);
