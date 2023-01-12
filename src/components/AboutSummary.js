@@ -39,7 +39,7 @@ const AboutSummary = () => (
         </p>
       </div>
     </div>
-    <div className="pic-desktop hidden-desktop">
+    <div className="pic-desktop hidden">
       <div>
         <img className="picFrame" src={picFrame} alt="" />
       </div>

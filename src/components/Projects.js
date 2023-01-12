@@ -1,10 +1,14 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 import './Projects.css';
 import { projects } from '../helper';
 
-const Projects = () => {
+const Projects = (props) => {
+  const { onProjectClick, openModal } = props;
   const displayModal = (e) => {
-    console.log(e.target.name);
+    onProjectClick(+e.target.name);
+    openModal(true);
+    document.body.classList.add('scroll-lock');
   };
 
   return (
@@ -12,7 +16,14 @@ const Projects = () => {
       <h2>Recent Works</h2>
       <div className="project-container">
         {projects.map((project) => (
-          <div style={{ cursor: 'pointer' }} name={project.id} className="project" key={project.id} role="presentation" onClick={displayModal}>
+          <div
+            style={{ cursor: 'pointer' }}
+            name={project.id}
+            className="project"
+            key={project.id}
+            role="presentation"
+            onClick={displayModal}
+          >
             <img name={project.id} src={project.image} alt="" />
             <p name={project.id}>{project.title}</p>
           </div>
@@ -21,4 +32,10 @@ const Projects = () => {
     </div>
   );
 };
+
+Projects.propTypes = {
+  onProjectClick: PropTypes.func.isRequired,
+  openModal: PropTypes.func.isRequired,
+};
+
 export default Projects;

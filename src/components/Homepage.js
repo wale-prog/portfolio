@@ -1,19 +1,45 @@
+import React, { useState } from 'react';
 import Intro from './Intro';
 import AboutSummary from './AboutSummary';
 import Expertise from './Expertise';
 import Qualifications from './Qualifications';
 import Skills from './Skills';
 import Projects from './Projects';
+import ProjectsModal from './ProjectsModal';
 
-const Hompegage = () => (
-  <>
-    <Intro />
-    <AboutSummary />
-    <Expertise />
-    <Qualifications />
-    <Skills />
-    <Projects />
-  </>
-);
+const Homepage = () => {
+  const [projectId, setProjectId] = useState(0);
+  const [openModal, setOpenModal] = useState(false);
+  const onProjectClick = (id) => {
+    setProjectId(id);
+  };
 
-export default Hompegage;
+  const style = () => {
+    let output = {};
+    if (openModal) {
+      output = {
+        filter: 'blur(5px)',
+        width: '100%',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+      };
+    }
+    return output;
+  };
+
+  return (
+    <>
+      <div style={style()}>
+        <Intro />
+        <AboutSummary />
+        <Expertise />
+        <Qualifications />
+        <Skills />
+        <Projects onProjectClick={onProjectClick} openModal={setOpenModal} />
+      </div>
+      {openModal && <ProjectsModal projectId={projectId} closeModal={setOpenModal} />}
+    </>
+  );
+};
+
+export default Homepage;

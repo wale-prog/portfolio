@@ -2,6 +2,9 @@ import edu from './images/mobile/edu.png';
 import skillImg from './images/mobile/skill_img.png';
 import deezerImg from './images/mobile/deezer.png';
 import travelersHub from './images/mobile/space_travelers.png';
+import deezerSnapshot from './images/mobile/deezer-snapshot.jpg';
+import liveImg from './images/desktop/modal-live.png';
+import sourceImg from './images/desktop/modal-git.png';
 
 export const eduData = () => (
   [
@@ -103,18 +106,23 @@ export const projects = [
     id: 1,
     title: 'Deezer Music App',
     image: deezerImg,
+    snapShot: deezerSnapshot,
     description: 'Deezer Mobile Music App is an entertainment app that sort through musical chart to bring all time music hits around the world to your doorstep and the fun part is that it comes with preview to the music if for instance the user cannot decide. It is powered by ',
     technologies: ['React', 'Redux', 'JavaScript', 'Jest', 'HTML', 'CSS'],
     live: 'https://cheerful-crostata-ea300b.netlify.app/',
     source: 'https://github.com/wale-prog/deezer-music-app',
+    liveImg,
+    sourceImg,
   },
   {
     id: 2,
     title: 'Space Traveller\'s Hub',
     image: travelersHub,
     description: 'Space Traveler\'s Hub is a simple website that allows a users to check through the variety of space rockets and missions made available by Space X and choose a combination of missions and rockets that catches their fancy.',
-    technologies: ['React', 'Redux', 'JavaScript', 'Jest', 'HTML', 'CSS'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Jest'],
     live: '',
     source: 'https://github.com/wale-prog/space-travelers',
+    liveImg,
+    sourceImg,
   },
 ];

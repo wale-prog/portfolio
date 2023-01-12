@@ -31,11 +31,29 @@
 }
 
 .hidden-desktop {
+  display: inline;
+}
+
+.hidden-mobile {
   display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 420px) {
+  .contact-info {
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 768px) {
   .hidden-desktop {
+    display: none;
+  }
+
+  .hidden-mobile {
     display: inline;
   }
 
@@ -45,8 +63,6 @@
 
   .about-summary-main {
     display: flex;
-
-    /* flex: 1 1 0; */
     margin: 0 110px 0 110px;
   }
 
