@@ -9,7 +9,7 @@ const ProjectsModal = (props) => {
   const project = projects.find((project) => project.id === projectId);
   const cancelModal = () => {
     closeModal(false);
-    document.body.style.overflow = 'auto';
+    document.body.classList.remove('scroll-lock');
   };
 
   return (
@@ -22,18 +22,28 @@ const ProjectsModal = (props) => {
               <div />
               <div />
             </div>
-            {/* <button type="button" onClick={cancelModal}>X</button> */}
           </div>
-          <img className="project-snapshot" src={project.snapShot} alt={project.title} />
-          <p>{project.description}</p>
-          <ul>
-            {project.technologies.map((tech, ind) => (
-              <li key={ind}>{tech}</li>
-            ))}
-          </ul>
-          <div className="project-links">
-            <a className="btn" href={project.live} target="_blank" rel="noreferrer">Live</a>
-            <a className="btn" href={project.source} target="_blank" rel="noreferrer">Source</a>
+          <div className="pic-desc">
+            <img className="project-snapshot" src={project.snapShot} alt={project.title} />
+            <div>
+              <p>{project.description}</p>
+              <ul>
+                <em>built with =&gt;</em>
+                {project.technologies.map((tech, ind) => (
+                  <li key={ind}>{tech}</li>
+                ))}
+              </ul>
+              <div className="project-links">
+                <a className="btn" href={project.live} target="_blank" rel="noreferrer">
+                  <em>See Live</em>
+                  <img src={project.liveImg} alt="" />
+                </a>
+                <a className="btn" href={project.source} target="_blank" rel="noreferrer">
+                  <em>See Source</em>
+                  <img src={project.sourceImg} alt="" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

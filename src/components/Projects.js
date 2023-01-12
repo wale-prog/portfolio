@@ -8,7 +8,7 @@ const Projects = (props) => {
   const displayModal = (e) => {
     onProjectClick(+e.target.name);
     openModal(true);
-    document.body.style.overflow = 'hidden';
+    document.body.classList.add('scroll-lock');
   };
 
   return (
