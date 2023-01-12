@@ -19,7 +19,7 @@
   width: 16px;
 }
 
-.close-btn div {  
+.close-btn div {
   border: 1px solid #000;
   width: 100%;
 }
@@ -49,7 +49,6 @@
 .project-modal button {
   background-color: transparent;
   border: none;
- 
   font-size: 1.5rem;
   font-weight: 600;
   cursor: pointer;
@@ -72,13 +71,13 @@
 .project-modal ul {
   display: flex;
   list-style: none;
-  gap: 2px;  
+  gap: 2px;
   padding: 0;
   flex-wrap: wrap;
 }
 
 .project-modal ul li {
-  padding: 4px;  
+  padding: 4px;
   color: #fff;
   background-color: #ea7911;
   border-radius: 5px;
