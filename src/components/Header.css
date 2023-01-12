@@ -5,6 +5,10 @@
   padding-top: 12px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .main-header {
   position: sticky;
   top: 0;
@@ -60,7 +64,4 @@
     margin-left: 24px;
   }
 
-  .scroll-lock {
-    overflow: visible;
-  }
 }
