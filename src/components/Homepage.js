@@ -13,14 +13,30 @@ const Homepage = () => {
   const onProjectClick = (id) => {
     setProjectId(id);
   };
+
+  const style = () => {
+    let output = {};
+    if (openModal) {
+      output = {
+        filter: 'blur(5px)',
+        width: '100%',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+      };
+    }
+    return output;
+  };
+
   return (
     <>
-      <Intro />
-      <AboutSummary />
-      <Expertise />
-      <Qualifications />
-      <Skills />
-      <Projects onProjectClick={onProjectClick} openModal={setOpenModal} />
+      <div style={style()}>
+        <Intro />
+        <AboutSummary />
+        <Expertise />
+        <Qualifications />
+        <Skills />
+        <Projects onProjectClick={onProjectClick} openModal={setOpenModal} />
+      </div>
       {openModal && <ProjectsModal projectId={projectId} closeModal={setOpenModal} />}
     </>
   );

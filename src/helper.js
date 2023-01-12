@@ -2,6 +2,7 @@ import edu from './images/mobile/edu.png';
 import skillImg from './images/mobile/skill_img.png';
 import deezerImg from './images/mobile/deezer.png';
 import travelersHub from './images/mobile/space_travelers.png';
+import deezerSnapshot from './images/mobile/deezer-snapshot.jpg';
 
 export const eduData = () => (
   [
@@ -103,6 +104,7 @@ export const projects = [
     id: 1,
     title: 'Deezer Music App',
     image: deezerImg,
+    snapShot: deezerSnapshot,
     description: 'Deezer Mobile Music App is an entertainment app that sort through musical chart to bring all time music hits around the world to your doorstep and the fun part is that it comes with preview to the music if for instance the user cannot decide. It is powered by ',
     technologies: ['React', 'Redux', 'JavaScript', 'Jest', 'HTML', 'CSS'],
     live: 'https://cheerful-crostata-ea300b.netlify.app/',

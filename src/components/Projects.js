@@ -8,6 +8,7 @@ const Projects = (props) => {
   const displayModal = (e) => {
     onProjectClick(+e.target.name);
     openModal(true);
+    document.body.style.overflow = 'hidden';
   };
 
   return (
@@ -15,7 +16,14 @@ const Projects = (props) => {
       <h2>Recent Works</h2>
       <div className="project-container">
         {projects.map((project) => (
-          <div style={{ cursor: 'pointer' }} name={project.id} className="project" key={project.id} role="presentation" onClick={displayModal}>
+          <div
+            style={{ cursor: 'pointer' }}
+            name={project.id}
+            className="project"
+            key={project.id}
+            role="presentation"
+            onClick={displayModal}
+          >
             <img name={project.id} src={project.image} alt="" />
             <p name={project.id}>{project.title}</p>
           </div>
