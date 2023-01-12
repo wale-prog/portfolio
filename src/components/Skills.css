@@ -51,7 +51,7 @@
 }
 
 @media (min-width: 768px) {
-  .skill-desktop-container{
+  .skill-desktop-container {
     /* display: flex;
     justify-content: space-around; */
     display: grid;
