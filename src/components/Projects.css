@@ -15,3 +15,35 @@
   margin-top: 40px;
   gap: 32px;
 }
+
+.cta {
+  background-color: rgba(191, 186, 186, 0.52);
+  border-radius: 15px 15px 0 0;
+  margin: 36px 18px;
+  padding-top: 32px;
+  padding-bottom: 11px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.cta h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.cta p {
+  margin: 8px 30px 16px 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.cta a {
+  color: #ea7911;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
