@@ -13,6 +13,7 @@ html {
   position: sticky;
   top: 0;
   background-color: #000;
+  z-index: 2;
 }
 
 .hamburger {

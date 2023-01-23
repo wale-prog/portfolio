@@ -8,6 +8,7 @@ import liveImg from './images/desktop/modal-live.png';
 import sourceImg from './images/desktop/modal-git.png';
 import deezerDesktop from './images/desktop/deezer.png';
 import spaceTraveler from './images/desktop/space_traveler.png';
+import robert from './images/mobile/robert.png';
 // import rpg2022 from './images/mobile/rpg_snapshot.jpg';
 // import rpgDesktop from './images/mobile/rpg_detail_redo.jpg';
 
@@ -143,4 +144,20 @@ export const projects = [
   //   live: 'https://cheerful-crostata-ea300b.netlify.app',
   //   source: 'https://github.com/wale-prog/deezer-music-app',
   // },
+];
+
+export const recommendation = [
+  {
+    id: 1,
+    body: 'Working with Olawale was immediately exciting because he showed strong technical knowledge in React, Redux, Rails, and several other tools. Our remote collaboration session has always been a moment to learn new concepts. He is able to express himself professionally in oral and writing. I strongly recommend him for any jobs that may come on his way.',
+    title: 'React.js | Ruby on Rails - Full Stack Developer',
+    name: 'Robertson Akpan',
+    image: robert,
+  },
+  {
+    id: 2,
+    body: 'Working with Oluwatomi was a pleasant and engaging experience as he demonstrated competence in cloud computing and the Network Switching Subsystem part of Telecommunications. He possesses underrated qualities in today\'s working environment, such as punctuality, solution-orienting, and resourcefulness. He will always go above and beyond to consistently present his best and ensure excellence in his deliverables. Such a personality would be a great addition to any team or organization.',
+    title: 'MBA, AWS, Azure, GCP, CCNA,itil',
+    name: 'Oluwatomi Odunlami',
+  },
 ];

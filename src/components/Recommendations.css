@@ -1,0 +1,36 @@
+.receommendation-main {
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+  padding: 32px 28px;
+  text-align: center;
+}
+
+.recommendation-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ea7911;
+}
+
+.receommendation-main h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.recommendation-body {
+  text-align: left;
+  margin-top: 24px;
+  line-height: 36px;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 19px;
+}
+
+.receommendation-main h4 {
+  margin: 12px auto;
+}
+
+.recommendation-footer {
+  opacity: 0.5;
+}
