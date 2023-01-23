@@ -34,3 +34,13 @@
 .recommendation-footer {
   opacity: 0.5;
 }
+
+.recommend-image {
+  min-width: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.recommend-image img {
+  width: 79px;
+}
