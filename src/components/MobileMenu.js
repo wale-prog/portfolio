@@ -9,7 +9,7 @@ const MobileMenu = (props) => {
     onCloseMenu(false);
   };
 
-  const activeStyle = { opacity: '1', color: '#fff' };
+  const activeStyle = { opacity: '1', color: '#fff', textDecoration: 'underline #ea7911 3px' };
 
   return (
     <div

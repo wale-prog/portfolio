@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import edu from './images/mobile/edu.png';
 import skillImg from './images/mobile/skill_img.png';
 import deezerImg from './images/mobile/deezer.png';
@@ -7,6 +8,8 @@ import liveImg from './images/desktop/modal-live.png';
 import sourceImg from './images/desktop/modal-git.png';
 import deezerDesktop from './images/desktop/deezer.png';
 import spaceTraveler from './images/desktop/space_traveler.png';
+// import rpg2022 from './images/mobile/rpg_snapshot.jpg';
+// import rpgDesktop from './images/mobile/rpg_detail_redo.jpg';
 
 export const eduData = () => (
   [
@@ -119,7 +122,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Space Traveller\'s Hub',
+    title: 'Space Traveler\'s Hub',
     image: travelersHub,
     imageDesktop: spaceTraveler,
     description: 'Space Traveler\'s Hub is a simple website that allows a users to check through the variety of space rockets and missions made available by Space X and choose a combination of missions and rockets that catches their fancy.',
@@ -129,4 +132,15 @@ export const projects = [
     liveImg,
     sourceImg,
   },
+  // {
+  //   id: 3,
+  //   title: 'RPG 2022 Conference',
+  //   image: rpgDesktop,
+  //   imageDesktop: rpgDesktop,
+  //   snapShot: rpg2022,
+  //   description: 'RPG 2022 is a conference landing and about pages advocating for Renewable Power Generation with zero net carbon emission. The webpage is responsive and compatible with screen sizes lower than 768px, then higher screen sizes.',
+  //   technologies: ['HTML', 'CSS', 'JavaScript', 'Git', 'Stylelint', 'Eslint'],
+  //   live: 'https://cheerful-crostata-ea300b.netlify.app',
+  //   source: 'https://github.com/wale-prog/deezer-music-app',
+  // },
 ];

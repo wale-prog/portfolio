@@ -12,10 +12,9 @@ const Projects = (props) => {
     setWindowSize(window.innerWidth);
   };
 
-  const imageSource = (project) => {
-    const result = windowSize <= 768 ? project.image : project.imageDesktop;
-    return result;
-  };
+  const imageSource = (project) => (
+    windowSize <= 768 ? project.image : project.imageDesktop
+  );
 
   const displayModal = (e) => {
     onProjectClick(+e.target.name);
@@ -37,9 +36,18 @@ const Projects = (props) => {
             onClick={displayModal}
           >
             <img name={project.id} src={imageSource(project)} alt="" />
-            <p name={project.id}>{project.title}</p>
+            <p>{project.title}</p>
           </div>
         ))}
+      </div>
+      <div className="cta">
+        <h2>Have a project on your mind?</h2>
+        <p>
+          I help client to create a possible solution to their problems.
+          I have been doing this over the years and many have reached out
+          to me commending my effort as well as recommending me for many other jobs.
+        </p>
+        <a href="#contact">Contact Me</a>
       </div>
     </div>
   );
