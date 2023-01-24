@@ -158,7 +158,7 @@ export const recommendation = [
   {
     id: 2,
     body: 'Working with Olawale was a pleasant and engaging experience as he demonstrated competence in cloud computing and the Network Switching Subsystem part of Telecommunications. He possesses underrated qualities in today\'s working environment, such as punctuality, solution-orienting, and resourcefulness. He will always go above and beyond to consistently present his best and ensure excellence in his deliverables. Such a personality would be a great addition to any team or organization.',
-    title: 'MBA, AWS, Azure, GCP, CCNA,itil',
+    title: 'MBA, AWS, Azure, GCP, CCNA,ITIL',
     name: 'Oluwatomi Odunlami',
     image: tomi,
   },

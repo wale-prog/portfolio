@@ -33,6 +33,7 @@
 
 .recommendation-footer {
   opacity: 0.5;
+  padding-bottom: 12px;
 }
 
 .recommend-image {
@@ -43,4 +44,24 @@
 
 .recommend-image img {
   width: 79px;
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.carousel-indicators button {
+  /* border: 1px solid #000; */
+  background-color: rgb(175, 170, 170);
+  border: none;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+}
+
+.carousel-indicators button.active {
+  background-color: #ea7911;
+  border: none;
 }
