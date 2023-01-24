@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import phone from '../images/mobile/phone.png';
+import mail from '../images/mobile/mail.png';
+import location from '../images/mobile/location.png';
+import github from '../images/mobile/github.png';
+import linkedin from '../images/mobile/linkedin.png';
+import medium from '../images/mobile/medium.png';
+import angelist from '../images/mobile/angelist.png';
 import './Contact.css';
 
 const Contact = () => {
@@ -107,6 +114,38 @@ const Contact = () => {
         />
         <button type="submit">Send Message</button>
       </form>
+      <section className="footer">
+        <div className="footer-content">
+          <img src={phone} alt="phone icon" />
+          <div>
+            <p>Call Me</p>
+            <a href="tel:+2348032415315">+234-803-2415-315</a>
+          </div>
+        </div>
+        <div className="footer-content">
+          <img src={mail} alt="mail icon" />
+          <div>
+            <p>E-mail</p>
+            <a href="mailto:olapetanwale@outlook.com">olapetanwale@outlook.com</a>
+          </div>
+        </div>
+        <div className="footer-content">
+          <img src={location} alt="location icon" />
+          <div>
+            <p>Location</p>
+            <h6>Lagos, Nigeria</h6>
+          </div>
+        </div>
+      </section>
+      <section className="social-handles">
+        <hr className="footer-line" />
+        <ul>
+          <li><a href="https://github.com/wale-prog" target="_blank" rel="noreferrer"><img src={github} alt="github icon" /></a></li>
+          <li><a href="https://linkedin.com/in/walepetan" target="_blank" rel="noreferrer"><img src={linkedin} alt="linkedin icon" /></a></li>
+          <li><a href="https://angel.co/u/wale_petan" target="_blank" rel="noreferrer"><img src={angelist} alt="angelist icon" /></a></li>
+          <li><a href="https://medium.com/@bumpyplanks" target="_blank" rel="noreferrer"><img src={medium} alt="medium icon" /></a></li>
+        </ul>
+      </section>
     </div>
   );
 };
