@@ -6,6 +6,8 @@ import Qualifications from './Qualifications';
 import Skills from './Skills';
 import Projects from './Projects';
 import ProjectsModal from './ProjectsModal';
+import Recommendations from './Recommendations';
+import Contact from './Contact';
 
 const Homepage = () => {
   const [projectId, setProjectId] = useState(0);
@@ -36,6 +38,8 @@ const Homepage = () => {
         <Qualifications />
         <Skills />
         <Projects onProjectClick={onProjectClick} openModal={setOpenModal} />
+        <Recommendations />
+        <Contact />
       </div>
       {openModal && <ProjectsModal projectId={projectId} closeModal={setOpenModal} />}
     </>
