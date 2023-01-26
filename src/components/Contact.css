@@ -220,15 +220,21 @@
     position: relative;
     left: -200%;
     bottom: 0;
-    min-width: 30%;    
-    transition: all 0.3s ease-in-out;
-    transition: left 0.3s ease-in-out;
+    min-width: 30%;
+    display: none;
+    animation: message-in;    
+    animation-duration: 1s;
   }
 
   .error-message.active,
   .success-message.active {
-    /* position: static; */
     left: 0;
-  } 
+    display: flex;
+  }
+  
+  @keyframes message-in {
+    from {left: -200%;}
+    to {left: 0;}
+  }
 
 }
