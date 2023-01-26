@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import axios from 'axios';
 import phone from '../images/mobile/phone.png';
@@ -16,7 +17,7 @@ const Contact = () => {
     message: '',
   });
   const [errorStatus, setErrorStatus] = useState(false);
-  const [successStatus, setSuccessStatus] = useState(false);
+  const [successStatus, setSuccessStatus] = useState(true);
 
   const handleInput = (e) => {
     setInput({
@@ -61,36 +62,29 @@ const Contact = () => {
 
       <section className="contact-section">
         <form className="form" onSubmit={handleSubmit}>
-          <section className="popup-message-handling">
-            {errorStatus
-            && (
-            <div className="error-message">
-              <p className="cancel" role="presentation" onClick={closeError}>x</p>
+
+          <div className={errorStatus ? 'error-message active' : 'error-message'}>
+            <p className="cancel" role="presentation" onClick={closeError}>x</p>
+            <p>
+              Sorry! Form isn&apos;t working right now, not to worry&#128516;!
+              You can send me a direct email&#128231;
+              {' '}
+              <a href="mailto:olapetanwale@outlook.com">here</a>
+            </p>
+          </div>
+          <div>
+            <div className={successStatus ? 'success-message active' : 'success-message'}>
+              <p className="cancel" role="presentation" onClick={closeMessage}>x</p>
               <p>
-                Sorry! Form isn&apos;t working right now, not to worry&#128516;!
-                You can send me a direct email&#128231;
+                Great! Thank you for getting in touch, the message has been recieved and
+                I will get back to you as soon as possible. In the meantime,
+                please feel free to go through my other projects on
                 {' '}
-                <a href="mailto:olapetanwale@outlook.com">here</a>
+                <a href="https://github.com/wale-prog" target="__blank">GitHub.</a>
               </p>
             </div>
-            )}
+          </div>
 
-            {successStatus
-            && (
-            <div>
-              <div className="success-message">
-                <p className="cancel" role="presentation" onClick={closeMessage}>x</p>
-                <p>
-                  Great! Thank you for getting in touch, the message has been recieved and
-                  I will get back to you as soon as possible. In the meantime,
-                  please feel free to go through my other projects on
-                  {' '}
-                  <a href="https://github.com/wale-prog" target="__blank">GitHub.</a>
-                </p>
-              </div>
-            </div>
-            )}
-          </section>
           <div className="contact-input">
             <input
               value={input.name}

@@ -163,7 +163,7 @@
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 5%;  
+  gap: 5%;
   padding: 0;
 }
 
@@ -200,7 +200,7 @@
   .contact-main button {
     margin-right: auto;
     margin-left: 0;
-    max-width: 226px
+    max-width: 226px;
   }
 
   .contact-input > input {
@@ -218,15 +218,17 @@
   .success-message,
   .error-message {
     position: relative;
-    left: 0;
-    animation: message;
-    animation-duration: 1s;
-    min-width: 30%; 
+    left: -200%;
+    bottom: 0;
+    min-width: 30%;    
+    transition: all 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out;
   }
 
-  @keyframes message {
-    from {position: relative; left: -300px;}
-    to {position: relative; left: 0;}
-  }
-  
+  .error-message.active,
+  .success-message.active {
+    /* position: static; */
+    left: 0;
+  } 
+
 }
