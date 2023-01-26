@@ -63,7 +63,11 @@
   font-weight: 400;
 }
 
-.qualification p {
+.bullet-point p {
+  flex-basis: 100%;
+}
+
+.qualification > div > p {
   font-weight: 400;
   font-size: 14px;
   color: #ea7911;
@@ -75,11 +79,12 @@
 
 .bullet {
   height: 8px;
+  width: 8px;
   background-color: #ea7911;
   transform: rotate(45deg);
   position: relative;
-  top: 18px;
-  flex-basis: 8px;
+  top: 8px;
+  align-self: flex-start;
 }
 
 .bullet-point {
@@ -87,10 +92,6 @@
   justify-content: space-between;
   margin-left: 24px;
   gap: 6px;
-}
-
-.bullet-point p {
-  flex-basis: 100%;
 }
 
 .line {
@@ -102,18 +103,96 @@
   display: block;
 }
 
+.hidden-mobile {
+  display: none;
+}
+
+.experience-desc {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: 768px) {
   .edu-quali {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .bullet-point {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 24px;
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+
+  .bullet {
+    height: 8px;
+    width: 8px;
+    background-color: #ea7911;
+    transform: rotate(45deg);
+    position: relative;
+    top: 14px;
+    left: -14px;
+    align-self: flex-start;
+  }
+
+  .jd-btn {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 10px;
+    color: #fff;
+    outline: none;
+    background-color: #ea9711;
+    margin-top: 24px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .jd-btn:focus {
+    border: none;
+    outline: none;
+  }
+
+  .jd-btn:hover {
+    color: #ea7911;
+    background-color: #fff;
+    border: 1.5px solid #ea7911;
+  }
+
+  .jd-btn:active {
+    color: #fff;
+    background-color: #ea7911;
+  }
+
+  .experience-desc {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .qualifications {
+    flex: 1 1 0;
   }
 
   .hidden-desktop {
     display: none;
   }
 
+  .hidden-mobile {
+    display: block;
+  }
+
   .experience {
     margin-top: 0;
+    flex: 1 1 0;
   }
 }

@@ -2,12 +2,15 @@ import React from 'react';
 import './AboutSummary.css';
 import { NavLink } from 'react-router-dom';
 import picFrame from '../images/desktop/pic_frame.png';
+import personIcon from '../images/desktop/person-icon.png';
+import mailIcon from '../images/desktop/mail-icon.png';
+import phoneIcon from '../images/desktop/phone-icon.png';
 
 const AboutSummary = () => (
   <div className="about-summary-main" id="about">
     <div className="about-content">
       <h2>About me</h2>
-      <p>
+      <p className="summary-paragraph">
         Hello, my name is Wale. I am a full-stack developer currently
         working as a code reviewer at Microverse,
         a remote software development school.
@@ -24,19 +27,28 @@ const AboutSummary = () => (
         </span>
       </p>
       <div className="contact-info">
-        <p>
-          Name:
-          {' '}
-          <span>Olapetan Olawale</span>
-        </p>
-        <p>
-          Phone:
-          <span>+234 - 803 - 241 - 5315</span>
-        </p>
-        <p>
-          Email:
-          <span><a href="mailto:olapetanwale@outlook.com">olapetanwale@outlook.com</a></span>
-        </p>
+        <div>
+          <img src={personIcon} alt="" />
+          <p>
+            Name:
+            {' '}
+            <span>Olapetan Olawale</span>
+          </p>
+        </div>
+        <div>
+          <img src={phoneIcon} alt="" />
+          <p>
+            Phone:
+            <span><a href="tel:+2348032415315">+234-803-241-5315</a></span>
+          </p>
+        </div>
+        <div>
+          <img src={mailIcon} alt="" />
+          <p>
+            Email:
+            <span><a href="mailto:olapetanwale@outlook.com">olapetanwale@outlook.com</a></span>
+          </p>
+        </div>
       </div>
     </div>
     <div className="pic-desktop hidden">

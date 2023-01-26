@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import phone from '../images/mobile/phone.png';
+import mail from '../images/mobile/mail.png';
+import location from '../images/mobile/location.png';
+import github from '../images/mobile/github.png';
+import linkedin from '../images/mobile/linkedin.png';
+import medium from '../images/mobile/medium.png';
+import angelist from '../images/mobile/angelist.png';
 import './Contact.css';
 
 const Contact = () => {
@@ -51,62 +58,100 @@ const Contact = () => {
     <div className="contact-main" id="contact">
 
       <h4>Get In Touch</h4>
-      {
-      errorStatus
-      && (
-        <div className="error-message">
-          <p className="cancel" role="presentation" onClick={closeError}>x</p>
-          <p>
-            Sorry! Form isn&apos;t working right now, not to worry&#128516;!
-            You can send me a direct email&#128231;
-            {' '}
-            <a href="mailto:olapetanwale@outlook.com">here</a>
-          </p>
-        </div>
-      )
-      }
-      {
-        successStatus
-        && (
-          <div className="success-message">
-            <p className="cancel" role="presentation" onClick={closeMessage}>x</p>
-            <p>
-              Great! Thank you for getting in touch, the message has been recieved and
-              I will get back to you as soon as possible. In the meantime,
-              please feel free to go through my other projects on
-              {' '}
-              <a href="https://github.com/wale-prog" target="__blank">GitHub.</a>
-            </p>
+
+      <section className="contact-section">
+        <form className="form" onSubmit={handleSubmit}>
+          <section className="popup-message-handling">
+            {errorStatus
+            && (
+            <div className="error-message">
+              <p className="cancel" role="presentation" onClick={closeError}>x</p>
+              <p>
+                Sorry! Form isn&apos;t working right now, not to worry&#128516;!
+                You can send me a direct email&#128231;
+                {' '}
+                <a href="mailto:olapetanwale@outlook.com">here</a>
+              </p>
+            </div>
+            )}
+
+            {successStatus
+            && (
+            <div>
+              <div className="success-message">
+                <p className="cancel" role="presentation" onClick={closeMessage}>x</p>
+                <p>
+                  Great! Thank you for getting in touch, the message has been recieved and
+                  I will get back to you as soon as possible. In the meantime,
+                  please feel free to go through my other projects on
+                  {' '}
+                  <a href="https://github.com/wale-prog" target="__blank">GitHub.</a>
+                </p>
+              </div>
+            </div>
+            )}
+          </section>
+          <div className="contact-input">
+            <input
+              value={input.name}
+              name="name"
+              placeholder="Name"
+              required
+              maxLength="45"
+              onChange={handleInput}
+            />
+            <input
+              value={input.email}
+              name="email"
+              placeholder="Email"
+              required
+              pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}$"
+              onChange={handleInput}
+            />
           </div>
-        )
-      }
-      <form className="form" onSubmit={handleSubmit}>
-        <input
-          value={input.name}
-          name="name"
-          placeholder="Name"
-          required
-          maxLength="45"
-          onChange={handleInput}
-        />
-        <input
-          value={input.email}
-          name="email"
-          placeholder="Email"
-          required
-          pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}$"
-          onChange={handleInput}
-        />
-        <textarea
-          value={input.message}
-          name="message"
-          required
-          maxLength="500"
-          placeholder="Message"
-          onChange={handleInput}
-        />
-        <button type="submit">Send Message</button>
-      </form>
+          <textarea
+            value={input.message}
+            name="message"
+            required
+            maxLength="500"
+            placeholder="Message"
+            onChange={handleInput}
+          />
+          <button type="submit">Send Message</button>
+        </form>
+        <section className="footer">
+          <div className="footer-content">
+            <img src={phone} alt="phone icon" />
+            <div>
+              <p>Call Me</p>
+              <a href="tel:+2348032415315">+234-803-2415-315</a>
+            </div>
+          </div>
+          <div className="footer-content">
+            <img src={mail} alt="mail icon" />
+            <div>
+              <p>E-mail</p>
+              <a href="mailto:olapetanwale@outlook.com">olapetanwale@outlook.com</a>
+            </div>
+          </div>
+          <div className="footer-content">
+            <img src={location} alt="location icon" />
+            <div>
+              <p>Location</p>
+              <h6>Lagos, Nigeria</h6>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section className="social-handles">
+        <hr className="footer-line" />
+        <ul>
+          <li><a href="https://github.com/wale-prog" target="_blank" rel="noreferrer"><img src={github} alt="github icon" /></a></li>
+          <li><a href="https://linkedin.com/in/walepetan" target="_blank" rel="noreferrer"><img src={linkedin} alt="linkedin icon" /></a></li>
+          <li><a href="https://angel.co/u/wale_petan" target="_blank" rel="noreferrer"><img src={angelist} alt="angelist icon" /></a></li>
+          <li><a href="https://medium.com/@bumpyplanks" target="_blank" rel="noreferrer"><img src={medium} alt="medium icon" /></a></li>
+        </ul>
+      </section>
     </div>
   );
 };

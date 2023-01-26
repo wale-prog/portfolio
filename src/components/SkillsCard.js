@@ -4,7 +4,7 @@ import { skills } from '../helper';
 import skillLogo from '../images/mobile/skill_logo.png';
 
 const SkillsCard = () => {
-  const technicalSkills = skills();
+  const technicalSkills = skills;
   return (
     <>
       <div id="carouselExampleIndicators" className="carousel slide hidden-desktop" data-ride="carousel">
