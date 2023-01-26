@@ -103,13 +103,15 @@
     outline: none;
   }
 
-  
   .carousel-control-prev,
   .carousel-control-next {
     display: none;
+
     /* color: #000; */
     opacity: 1;
+
     /* position: relative; */
+
     /* background-color: #000; */
   }
 

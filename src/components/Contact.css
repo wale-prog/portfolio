@@ -84,6 +84,14 @@
   display: inline;
 }
 
+.footer-content p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 50px;
+  margin: 0;
+}
+
 .error-message p:last-child {
   font-size: 14px;
   font-weight: 400;
@@ -117,14 +125,6 @@
 .footer-content {
   display: flex;
   gap: 7%;
-}
-
-.footer-content p {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 50px;
-  margin: 0;
 }
 
 .footer-content a {
@@ -163,7 +163,7 @@
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 5%;  
+  gap: 5%;
   padding: 0;
 }
 
@@ -200,7 +200,7 @@
   .contact-main button {
     margin-right: auto;
     margin-left: 0;
-    max-width: 226px
+    max-width: 226px;
   }
 
   .contact-input > input {
@@ -221,12 +221,11 @@
     left: 0;
     animation: message;
     animation-duration: 1s;
-    min-width: 30%; 
+    min-width: 30%;
   }
 
   @keyframes message {
-    from {position: relative; left: -300px;}
-    to {position: relative; left: 0;}
+    from { left: -300px; }
+    to { left: 0; }
   }
-  
 }

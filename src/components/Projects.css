@@ -52,10 +52,10 @@
 }
 
 @keyframes shake {
-  12.5% {transform: rotate(12.5deg);}
-  25% {transform: rotate(-12.5deg);}
-  37.5% {transform: rotate(12.5deg);}
-  50% {transform: rotate(-12.5deg);}
+  12.5% { transform: rotate(12.5deg); }
+  25% { transform: rotate(-12.5deg); }
+  37.5% { transform: rotate(12.5deg); }
+  50% { transform: rotate(-12.5deg); }
 }
 
 .cta a:hover {
@@ -64,7 +64,7 @@
   color: #fff;
 }
 
-@media (min-width: 768px) {  
+@media (min-width: 768px) {
   .cta {
     background-color: rgba(191, 186, 186, 0.52);
     border-radius: 0;
