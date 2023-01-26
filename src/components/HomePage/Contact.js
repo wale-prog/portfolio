@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import phone from '../images/mobile/phone.png';
-import mail from '../images/mobile/mail.png';
-import location from '../images/mobile/location.png';
-import github from '../images/mobile/github.png';
-import linkedin from '../images/mobile/linkedin.png';
-import medium from '../images/mobile/medium.png';
-import angelist from '../images/mobile/angelist.png';
+import phone from '../../images/mobile/phone.png';
+import mail from '../../images/mobile/mail.png';
+import location from '../../images/mobile/location.png';
+import github from '../../images/mobile/github.png';
+import linkedin from '../../images/mobile/linkedin.png';
+import medium from '../../images/mobile/medium.png';
+import angelist from '../../images/mobile/angelist.png';
 import './Contact.css';
 
 const Contact = () => {

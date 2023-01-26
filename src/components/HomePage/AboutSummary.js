@@ -1,10 +1,10 @@
 import React from 'react';
 import './AboutSummary.css';
 import { NavLink } from 'react-router-dom';
-import picFrame from '../images/desktop/pic_frame.png';
-import personIcon from '../images/desktop/person-icon.png';
-import mailIcon from '../images/desktop/mail-icon.png';
-import phoneIcon from '../images/desktop/phone-icon.png';
+import picFrame from '../../images/desktop/pic_frame.png';
+import personIcon from '../../images/desktop/person-icon.png';
+import mailIcon from '../../images/desktop/mail-icon.png';
+import phoneIcon from '../../images/desktop/phone-icon.png';
 
 const AboutSummary = () => (
   <div className="about-summary-main" id="about">

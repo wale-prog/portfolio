@@ -36,7 +36,8 @@ const MobileMenu = (props) => {
         </li>
         <li>
           <NavLink
-            to="/projects"
+            // to="/projects"
+            hrefLang="#projects"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
             PROJECTS

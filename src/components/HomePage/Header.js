@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import MobileMenu from './MobileMenu';
-import logo from '../images/mobile/logo.png';
+import logo from '../../images/mobile/logo.png';
 import './Header.css';
 
 const Header = () => {

@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import { projects } from '../helper';
+import { projects } from '../../helper';
 import './ProjectsModal.css';
 
 const ProjectsModal = (props) => {

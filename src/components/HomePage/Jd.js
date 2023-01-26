@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import { experienceData } from '../helper';
+import { experienceData } from '../../helper';
 import './Qualifications.css';
 
 const Jd = (props) => {

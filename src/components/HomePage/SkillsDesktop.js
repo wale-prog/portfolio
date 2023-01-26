@@ -1,6 +1,6 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
-import { skills } from '../helper';
+import { skills } from '../../helper';
 import skillLogo from '../images/mobile/skill_logo.png';
 
 const SkillDesktop = () => {

@@ -1,5 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
-import { recommendation } from '../helper';
+import { recommendation } from '../../helper';
 import './Recommendations.css';
 
 const Recommendations = () => (

@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Jd from './Jd';
 import './Qualifications.css';
-import { eduData, experienceData } from '../helper';
+import { eduData, experienceData } from '../../helper';
 
 const Qualifications = () => {
   const [experienceId, setExperienceId] = useState(0);

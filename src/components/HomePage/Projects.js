@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { PropTypes } from 'prop-types';
 import './Projects.css';
-import { projects } from '../helper';
+import { projects } from '../../helper';
 
 const Projects = (props) => {
   const { onProjectClick, openModal } = props;

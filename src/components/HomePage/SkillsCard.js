@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
-import { skills } from '../helper';
-import skillLogo from '../images/mobile/skill_logo.png';
+import { skills } from '../../helper';
+import skillLogo from '../../images/mobile/skill_logo.png';
 
 const SkillsCard = () => {
   const technicalSkills = skills;

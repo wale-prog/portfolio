@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePhoto from '../images/mobile/home_photo.png';
+import profilePhoto from '../../images/mobile/home_photo.png';
 import './Intro.css';
 
 const Intro = () => (
