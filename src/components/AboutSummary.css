@@ -3,7 +3,7 @@
   padding: 5.5rem 0;
 }
 
-.about-summary-main p {
+.summary-paragraph {
   line-height: 50px;
   margin: 0 2.5rem;
 }
@@ -23,11 +23,28 @@
 
 .contact-info span {
   margin-left: 2.5rem;
+  font-weight: 300;
+  font-size: 18px;
+  opacity: 0.5;
 }
 
 .contact-info a {
   text-decoration: none;
   color: #fff;
+}
+
+.contact-info div {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-info div img {
+  align-self:flex-start;
+  width: 24px;
+  display: block;
 }
 
 .hidden-desktop {
@@ -54,11 +71,11 @@
   }
 
   .hidden-mobile {
-    display: inline;
+    display: block;
   }
 
-  .about-summary-main p {
-    margin: 0 2.5rem;
+  .summary-paragraph {
+    margin: 0 2.5rem 2.5rem;
   }
 
   .about-summary-main {

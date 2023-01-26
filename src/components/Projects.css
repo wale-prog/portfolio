@@ -21,7 +21,7 @@
   border-radius: 15px 15px 0 0;
   margin: 36px 18px;
   padding-top: 32px;
-  padding-bottom: 11px;
+  padding-bottom: 30px;
   text-align: center;
   margin-bottom: 48px;
 }
@@ -46,4 +46,33 @@
   background-color: #fff;
   padding: 10px 20px;
   border-radius: 20px;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+}
+
+@keyframes shake {
+  12.5% {transform: rotate(12.5deg);}
+  25% {transform: rotate(-12.5deg);}
+  37.5% {transform: rotate(12.5deg);}
+  50% {transform: rotate(-12.5deg);}
+}
+
+.cta a:hover {
+  animation: none;
+  background-color: #ea7911;
+  color: #fff;
+}
+
+@media (min-width: 768px) {  
+  .cta {
+    background-color: rgba(191, 186, 186, 0.52);
+    border-radius: 0;
+    margin: 36px 18px;
+    padding-top: 32px;
+    padding-left: 11.438rem;
+    padding-right: 11.438rem;
+    text-align: center;
+    margin-bottom: 48px;
+  }
 }
