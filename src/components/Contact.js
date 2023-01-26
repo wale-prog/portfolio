@@ -16,7 +16,7 @@ const Contact = () => {
     message: '',
   });
   const [errorStatus, setErrorStatus] = useState(false);
-  const [successStatus, setSuccessStatus] = useState(true);
+  const [successStatus, setSuccessStatus] = useState(false);
 
   const handleInput = (e) => {
     setInput({
@@ -65,7 +65,7 @@ const Contact = () => {
           <div className={errorStatus ? 'error-message active' : 'error-message'}>
             <p className="cancel" role="presentation" onClick={closeError}>x</p>
             <p>
-              Sorry! Form isn&apos;t working right now, not to worry&#128516;!
+              Oops! Form isn&apos;t working right now, not to worry&#128516;!
               You can send me a direct email&#128231;
               {' '}
               <a href="mailto:olapetanwale@outlook.com">here</a>
