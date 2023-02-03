@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
 import { PropTypes } from 'prop-types';
 import './MobileMenu.css';
 
@@ -8,6 +9,8 @@ const MobileMenu = (props) => {
   const closeMenu = () => {
     onCloseMenu(false);
   };
+
+  // const path = window.location.href;
 
   const activeStyle = { opacity: '1', color: '#fff', textDecoration: 'underline #ea7911 3px' };
 
@@ -35,21 +38,20 @@ const MobileMenu = (props) => {
           </NavLink>
         </li>
         <li>
-          <NavLink
-            // to="/projects"
-            hrefLang="#projects"
+          <NavHashLink
+            to="/#projects"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
             PROJECTS
-          </NavLink>
+          </NavHashLink>
         </li>
         <li>
-          <NavLink
-            to="/contact"
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          <NavHashLink
+            to="#contact"
+            // style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
             CONTACT
-          </NavLink>
+          </NavHashLink>
         </li>
       </ul>
     </div>
