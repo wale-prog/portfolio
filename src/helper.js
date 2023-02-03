@@ -82,7 +82,7 @@ export const skills = [
     title: 'Languages',
     skills: {
       image: skillImg,
-      skills: ['JavaScript', 'Ruby', 'Python', 'HTML', 'CSS'],
+      skills: ['JavaScript', 'Ruby', 'HTML', 'CSS', 'Bootstrap'],
     },
   },
   {
@@ -90,7 +90,7 @@ export const skills = [
     title: 'Frameworks',
     skills: {
       image: skillImg,
-      skills: ['Ruby on Rails', 'React', 'Bootstrap', 'Tailwind'],
+      skills: ['Ruby on Rails', 'React', 'NextJS', 'TailwindCSS', 'Chakra-UI'],
     },
   },
   {

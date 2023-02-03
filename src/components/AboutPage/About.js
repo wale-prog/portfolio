@@ -106,18 +106,20 @@ const About = () => (
         </div>
       </div>
     </section>
-    <section className="about-contact hidden-desktop">
-      <h3>I&apos;m not that hard to find. Lets develop something for you</h3>
-      <img src={contactImg} alt="" />
-      <ContactForm />
-    </section>
-    <section className="about-contact2 hidden-mobile">
-      <div>
+    <div id="contact">
+      <section className="about-contact hidden-desktop">
         <h3>I&apos;m not that hard to find. Lets develop something for you</h3>
+        <img src={contactImg} alt="" />
         <ContactForm />
-      </div>
-      <img src={contactImage} alt="" />
-    </section>
+      </section>
+      <section className="about-contact2 hidden-mobile">
+        <div>
+          <h3>I&apos;m not that hard to find. Lets develop something for you</h3>
+          <ContactForm />
+        </div>
+        <img src={contactImage} alt="" />
+      </section>
+    </div>
   </div>
 );
 export default About;

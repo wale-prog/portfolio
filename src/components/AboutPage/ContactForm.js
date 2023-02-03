@@ -48,7 +48,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <form onSubmit={onSubmit} className="contact-form" id="contact">
+      <form onSubmit={onSubmit} className="contact-form">
         <section className="popup-message-handling">
           {errorStatus
             && (
