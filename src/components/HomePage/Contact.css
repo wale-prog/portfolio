@@ -116,9 +116,21 @@
   font-weight: 400;
 }
 
+.footer-content a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.4;
+}
+
 .success-message > p > a {
   color: #ea7911;
   text-decoration: underline;
+}
+
+.footer-content a:hover {
+  text-decoration: none;
+  color: #ea7911;
 }
 
 .success-message > p > a:active {
@@ -139,18 +151,6 @@
 .footer-content {
   display: flex;
   gap: 7%;
-}
-
-.footer-content a {
-  color: #fff;
-  font-weight: 400;
-  font-size: 12px;
-  opacity: 0.4;
-}
-
-.footer-content a:hover {
-  text-decoration: none;
-  color: #ea7911;
 }
 
 .footer img {

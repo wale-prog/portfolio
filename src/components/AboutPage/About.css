@@ -48,6 +48,7 @@
   font-size: 32px;
   line-height: 38.73px;
 }
+
 .icon-text {
   font-weight: 500;
   font-size: 12px;
@@ -64,16 +65,20 @@
   gap: 11px;
 }
 
-.icons div:last-child {
-  flex: 1;
-}
-
 .icons > div > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
   margin-top: 40px;
+}
+
+.icons div:last-child {
+  flex: 1;
+}
+
+.about-contact img {
+  width: 80%;
 }
 
 .icons > div > div img {
@@ -85,7 +90,7 @@
 }
 
 .principle-text {
-  font-size: 500;
+  font-weight: 500;
   font-size: 14px;
   line-height: 40px;
 }
@@ -93,15 +98,10 @@
 .about-contact h3 {
   text-align: left;
   margin-bottom: 74px;
-  /* width: 16.436rem; */
   font-size: 32px;
   font-weight: 700;
   line-height: 38.73px;
   color: #ea7911;
-}
-
-.about-contact img {
-  width: 80%;
 }
 
 @media (min-width: 768px) {
@@ -148,6 +148,10 @@
     padding: 0 89px 42px 89px;
   }
 
+  .about-contact2 div {
+    flex: 1;
+  }
+
   .principle > div > div {
     flex: 1;
   }
@@ -177,14 +181,6 @@
     gap: 20px;
     margin-top: 20px;
   }
-  .about-contact2 h3 {
-    text-align: left;
-    margin-bottom: 74px;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 38.73px;
-    color: #ea7911;
-  }
 
   .about-contact2 {
     display: flex;
@@ -195,9 +191,11 @@
   .about-contact2 h3 {
     margin-top: 36px;
     padding-right: 70px;
+    margin-bottom: 74px;
     font-weight: 700;
     font-size: 2.4rem;
-    line-height: 40px;
+    line-height: 60px;
+    color: #ea7911;
   }
 
   .about-contact2 img {
@@ -205,9 +203,5 @@
     object-fit: contain;
     flex: 1;
     height: 700px;
-  }
-
-  .about-contact2 div {
-    flex: 1;
   }
 }
