@@ -40,7 +40,7 @@ const MobileMenu = (props) => {
         <li>
           <NavHashLink
             to="/#projects"
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            // style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
             PROJECTS
           </NavHashLink>
