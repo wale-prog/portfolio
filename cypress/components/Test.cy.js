@@ -1,5 +1,5 @@
 import React from 'react'
-import Test from './Test'
+import Test from '../../src/components/HomePage/Test';
 
 describe('<Test />', () => {
   it('renders', () => {
@@ -17,6 +17,6 @@ describe('<Test />', () => {
   it('Test should decrement', () => {
     cy.mount(<Test />)
     cy.get('[data-cy=decrement]').click()
-    cy.get('[data-cy=counter]').should('have.text', 'Here is the count -1')
+    cy.get('[data-cy=counter]').should('have.text', 'Here is the count 0')
   })
 })

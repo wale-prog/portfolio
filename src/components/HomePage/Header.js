@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import MobileMenu from './MobileMenu';
 import logo from '../../images/mobile/logo.png';
 import './Header.css';
@@ -22,7 +23,9 @@ const Header = () => {
     <div className="main-header">
       <nav className="header">
         <img src={logo} alt="page logo" />
-        <MobileMenu menu={mobileMenu} onCloseMenu={closeMenu} />
+        <BrowserRouter>
+          <MobileMenu menu={mobileMenu} onCloseMenu={closeMenu} />
+        </BrowserRouter>
         <div ref={header} className="hamburger" role="presentation" onClick={showMenu} onKeyDown={showMenu}>
           <div />
           <div />

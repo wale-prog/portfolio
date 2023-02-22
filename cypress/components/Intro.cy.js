@@ -1,9 +1,8 @@
 import React from 'react'
-import Intro from './Intro'
+import Intro from '../../src/components/HomePage/Intro'
 
 describe('<Intro />', () => {
   it('renders', () => {
-    // see: https://on.cypress.io/mounting-react
     cy.mount(<Intro />)
   })
 })

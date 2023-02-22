@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <div className="container-app">
+        <Header />
         <BrowserRouter>
-          <Header />
           <Routes>
             <Route exact path="/" element={<Homepage />} />
             <Route exact path="about" element={<About />} />

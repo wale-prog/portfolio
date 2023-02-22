@@ -23,7 +23,7 @@ const Test = () => {
         data-cy="decrement"
         type="button"
         onClick={() => (
-          setCounter((prev) => prev - 1)
+          counter === 0 ? '' : setCounter((prev) => prev - 1)
         )}
       >
         Decrement

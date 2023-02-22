@@ -10,8 +10,6 @@ const MobileMenu = (props) => {
     onCloseMenu(false);
   };
 
-  // const path = window.location.href;
-
   const activeStyle = { opacity: '1', color: '#fff', textDecoration: 'underline #ea7911 3px' };
 
   return (
@@ -24,7 +22,7 @@ const MobileMenu = (props) => {
         <li>
           <NavLink
             to="/"
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            style={({ working }) => (working ? activeStyle : undefined)}
           >
             HOME
           </NavLink>
@@ -32,7 +30,7 @@ const MobileMenu = (props) => {
         <li>
           <NavLink
             to="/about"
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            style={({ working }) => (working ? activeStyle : undefined)}
           >
             ABOUT
           </NavLink>
