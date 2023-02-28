@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../../src/components/HomePage/Header';
+<reference types="cypress"/>
 
 describe('<Header />', () => {
   beforeEach(() => {
@@ -11,7 +12,12 @@ describe('<Header />', () => {
   it('Mobile menu shows up', () => {
     cy.get('.hamburger').click()
     cy.get('.menu')
-    .should('have.class', 'active')
+    .should('be.visible')
     .should('have.text', 'HOMEABOUTPROJECTSCONTACT')
+  })
+  it('Mobile menu hidden when an option is selected', () => {
+    cy.get('.hamburger').click()
+    cy.get('.hamburger').click()
+    cy.get('.menu').should('not.be.visible')
   })
 }); 
