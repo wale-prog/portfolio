@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { NavHashLink } from 'react-router-hash-link';
+// import { NavHashLink } from 'react-router-hash-link';
 import { PropTypes } from 'prop-types';
 import './MobileMenu.css';
 
@@ -29,27 +29,27 @@ const MobileMenu = (props) => {
         </li>
         <li>
           <NavLink
-            to="/about"
+            to="about"
             style={({ working }) => (working ? activeStyle : undefined)}
           >
             ABOUT
           </NavLink>
         </li>
         <li>
-          <NavHashLink
-            to="/#projects"
-            // style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          <NavLink
+            to="/projects"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
             PROJECTS
-          </NavHashLink>
+          </NavLink>
         </li>
         <li>
-          <NavHashLink
-            to="#contact"
-            // style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          <NavLink
+            to="/contact"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
             CONTACT
-          </NavHashLink>
+          </NavLink>
         </li>
       </ul>
     </div>

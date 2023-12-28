@@ -11,16 +11,19 @@ const AboutSummary = () => (
     <div className="about-content">
       <h2>About me</h2>
       <p className="summary-paragraph">
-        Hello, my name is Wale. I am a full-stack developer currently
-        working as a code reviewer at Microverse,
-        a remote software development school.
-        The school uses project-based learning to teach development. I am naturally a
-        problem solver and do algorithms and Data structure challenges for fun.
-        In my free time, I like to listen to and make music,
-        Afro-infused music is my favorite because it combines cultures and of course groovy.
-        I have always been familiar with software development
-        because of my core studies in school; Electrical and Electronic Engineering.
-        There, I used two programming languages: Matlab and C, to simulate real-world experiments...
+        🚀 Hey there! I&apos;m Olawale, a passionate Software Quality Assurance professional
+        with four years of hands-on experience in ensuring top-notch software quality.🌐
+        <br />
+        👨‍💻 In the ever-evolving world of technology, I&apos;ve spent the past four years
+        diving deep into the realms of Software Quality Assurance, with a special focus
+        on Test Automation. For the last 1.5 years, I&apos;ve been on the automation highway,
+        leveraging tools like Selenium, Appium, and Cypress to bring efficiency and excellence
+        to the testing process.
+        <br />
+        🛠️ My tool belt includes Selenium and Appium for web and mobile automation,
+        respectively, making sure that every click and swipe is met with precision.
+        When it comes to web applications, I dance with Java and JavaScript to craft
+        robust automated test scripts....
         {' '}
         <span className="see-more">
           <NavLink to="/about">See more</NavLink>
